@@ -20,11 +20,11 @@ def funcao(x):
 
 def format_notacao(x):
     
-    fx = "{0:.4E}".format(x)
+    fx = '{0:.4E}'.format(x)
 
     return fx 
 
-file = open("Bi.sai", "w")
+file = open('Bi.sai', 'w')
 
 for i in range(0, N+1):
     x_iml = 0.5e0 * (a_i + b_i)
@@ -40,11 +40,11 @@ for i in range(0, N+1):
     
     if ( d_1 <= e ):
         if ( abs(fx) <= e ):
-            file.write("{0:2}".format(i) + "{0:16.4e}".format(a_i) + "{0:16.4e}".format(b_i) + "{0:16.4e}".format(x_iml) 
-            + "{0:16.4e}".format(fa) + "{0:16.4e}".format(fb) + "{0:16.4e}".format(fx) + "{0:16.4e}".format(d_1) +"\n")
+            file.write('{0:2}'.format(i) + '{0:16.4e}'.format(a_i) + '{0:16.4e}'.format(b_i) + '{0:16.4e}'.format(x_iml) 
+            + '{0:16.4e}'.format(fa) + '{0:16.4e}'.format(fb) + '{0:16.4e}'.format(fx) + '{0:16.4e}'.format(d_1) +'\n')
  
-    file.write("{0:2}".format(i) + "{0:16.4e}".format(a_i) + "{0:16.4e}".format(b_i) + "{0:16.4e}".format(x_iml) 
-    + "{0:16.4e}".format(fa) + "{0:16.4e}".format(fb) + "{0:16.4e}".format(fx) + "{0:16.4e}".format(d_1) +"\n")       
+    file.write('{0:2}'.format(i) + '{0:16.4e}'.format(a_i) + '{0:16.4e}'.format(b_i) + '{0:16.4e}'.format(x_iml) 
+    + '{0:16.4e}'.format(fa) + '{0:16.4e}'.format(fb) + '{0:16.4e}'.format(fx) + '{0:16.4e}'.format(d_1) +'\n')       
             
     if ( fa*fx <= 0.0e0 ):
         b_i = x_iml
